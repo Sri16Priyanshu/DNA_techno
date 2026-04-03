@@ -1,4 +1,5 @@
 # MindMesh – AI-Based Silent Mental Health Detection System
+> ⚡ Passive, non-intrusive mental health detection without self-reporting
 
 ## 🚨 Problem
 Students face increasing stress and mental health issues that often go undetected due to stigma and lack of early monitoring systems.
