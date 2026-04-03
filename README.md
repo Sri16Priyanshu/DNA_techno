@@ -14,3 +14,7 @@ MindMesh uses AI to passively monitor behavioral patterns such as screen time, s
 
 ## 🎯 Goal
 To enable early detection of mental health issues and promote timely intervention in student communities.
+
+## 👥 Team
+- Olivia Mukherjee – Development, AI Integration
+- Priyanshu Srivastav – Project Lead & Coordination
