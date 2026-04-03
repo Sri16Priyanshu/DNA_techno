@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MindMesh</title>
+</head>
+<body>
+  <h1>MindMesh Stress Checker</h1>
+
+  <label>Screen Time:</label>
+  <input id="screen" type="number"><br>
+
+  <label>Sleep Hours:</label>
+  <input id="sleep" type="number"><br>
+
+  <button onclick="checkStress()">Check</button>
+
+  <p id="result"></p>
+
+  <script>
+    async function checkStress() {
+      const response = await fetch("http://127.0.0.1:5000/analyze", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          screen_time: document.getElementById("screen").value,
+          sleep_hours: document.getElementById("sleep").value,
+          typing_speed_drop: true
+        })
+      });
+
+      const data = await response.json();
+      document.getElementById("result").innerText = data.stress_level;
+    }
+  </script>
+</body>
+</html>
