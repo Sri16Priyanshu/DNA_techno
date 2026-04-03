@@ -69,3 +69,22 @@ These factors are combined to classify stress into Normal, Moderate, or High lev
 ## 🔄 System Flow
 
 User Data → Data Processing → AI Model → Stress Detection → Alert/Support
+
+## ✅ Working Prototype
+
+The system is designed as a functional prototype:
+
+- Frontend collects user input (behavioral data)
+- Backend processes data using Flask API
+- AI logic analyzes patterns and returns stress level
+
+Example Output:
+Input:
+{
+  "screen_time": 9,
+  "sleep_hours": 5,
+  "typing_speed_drop": true
+}
+
+Output:
+High Stress
